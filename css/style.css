@@ -32,6 +32,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.body_fixed {
+  overflow: hidden;
+}
+
 header {
   width: 920px;
   height: 135px;
@@ -43,34 +47,38 @@ header {
 header .logo {
   width: 75px;
 }
-header nav {
+
+nav {
   width: 480px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav a {
+nav a {
   font-size: 14px;
   color: #303239;
   text-decoration: none;
   transition: 0.3s ease;
 }
-header nav a:last-child {
+nav a:last-child {
   width: 120px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #2020df;
   border-radius: 5px;
   font-weight: 500;
   color: #ffffff;
   background: #2020df;
+  box-shadow: inset 0 0 0px 0px #ffffff;
 }
-header nav a:last-child:hover {
-  box-shadow: 0 0 5px 1px #a7a5ef;
-  color: #ffffff;
+nav a:last-child:hover {
+  box-shadow: inset 120px 0 0 0 #ffffff;
+  color: #2020df;
 }
-header nav a:hover {
+nav a:hover {
   color: #2020df;
 }
 
@@ -235,15 +243,6 @@ header nav a:hover {
   position: absolute;
   opacity: 0.7;
 }
-.partnership-player_video-full {
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 100;
-}
 .partnership-player-name {
   font-size: 135px;
   font-weight: bold;
@@ -252,6 +251,7 @@ header nav a:hover {
   margin-bottom: 120px;
   left: calc(100% - 260px);
   z-index: 10;
+  transition: 1s ease;
 }
 .partnership-player-play {
   width: 200px;
@@ -265,6 +265,7 @@ header nav a:hover {
   margin-top: 220px;
   z-index: 10;
   cursor: pointer;
+  transition: 1s ease;
 }
 .partnership-player-play:hover .partnership-player-play_button {
   background: #ffffff;
@@ -410,12 +411,10 @@ header nav a:hover {
 .feedback-inner-row:nth-child(1) .feedback-inner-row-person:nth-child(1) {
   width: 56px;
   height: 56px;
-  background-image: url(../images/photo1.jpg);
 }
 .feedback-inner-row:nth-child(1) .feedback-inner-row-person:nth-child(2) {
   width: 75px;
   height: 75px;
-  background-image: url(../images/photo2.jpg);
 }
 .feedback-inner-row:nth-child(2) {
   width: 265px;
@@ -425,12 +424,10 @@ header nav a:hover {
 .feedback-inner-row:nth-child(2) .feedback-inner-row-person:nth-child(1) {
   width: 47px;
   height: 47px;
-  background-image: url(../images/photo3.jpg);
 }
 .feedback-inner-row:nth-child(2) .feedback-inner-row-person:nth-child(2) {
   width: 145px;
   height: 145px;
-  background-image: url(../images/photo4.jpg);
   box-shadow: 0 10px 15px 15px #ecf2ff;
 }
 .feedback-inner-row:nth-child(3) {
@@ -439,12 +436,10 @@ header nav a:hover {
 .feedback-inner-row:nth-child(3) .feedback-inner-row-person:nth-child(1) {
   width: 87px;
   height: 87px;
-  background-image: url(../images/photo5.jpg);
 }
 .feedback-inner-row:nth-child(3) .feedback-inner-row-person:nth-child(2) {
   width: 30px;
   height: 30px;
-  background-image: url(../images/photo6.jpg);
 }
 .feedback-inner:first-child {
   width: 515px;
@@ -509,11 +504,11 @@ header nav a:hover {
   opacity: 1;
 }
 
-#switchBack {
+#switchPrev {
   background-image: url(../images/arrow-left.png);
 }
 
-#switchFront {
+#switchNext {
   background-image: url(../images/arrow-right.png);
 }
 
@@ -552,6 +547,10 @@ header nav a:hover {
   box-sizing: border-box;
   margin-top: 15px;
   margin-bottom: 15px;
+  transition: 0.2s ease;
+}
+.tools-links_unit:hover {
+  background: #cecedf;
 }
 .tools-links_unit-img {
   width: 90%;
@@ -618,11 +617,12 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  box-shadow: 0 10px 40px 0px #4051e8;
+  box-shadow: 0 10px 40px 0px #4051e8, inset 0 0 0px 0px #a7a5ef;
   transition: 0.3s ease;
 }
 .start a:nth-child(3):hover {
-  box-shadow: 0 10px 30px 5px #4051e8;
+  box-shadow: 0 10px 40px 0px #4051e8, inset 177px 0px 0px 0px #a7a5ef;
+  color: #ffffff;
 }
 
 footer {
