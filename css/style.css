@@ -48,6 +48,27 @@ header .logo {
   width: 75px;
 }
 
+#menuBtn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 15px;
+  top: 20px;
+  border: none;
+  border-radius: 15px 3px 15px 3px;
+  font-size: 16px;
+  background-color: #2020df;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  transition: ease 0.2s;
+  z-index: 100;
+}
+
+.menu-btn-active {
+  border-radius: 3px 15px 3px 15px !important;
+}
+
 nav {
   width: 480px;
   display: flex;
