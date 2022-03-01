@@ -1,5 +1,6 @@
 let	menuBtn = document.querySelector('#menuBtn'),
-	nav = document.querySelector('nav');
+	nav = document.querySelector('nav'),
+	navBtns = document.querySelectorAll('.nav-btn');
 
 menuBtn.onclick = () => {
 	nav.classList.toggle('nav-active');
@@ -8,6 +9,15 @@ menuBtn.onclick = () => {
 		menuBtn.innerHTML = '✖';
 	}
 	else {
+		menuBtn.innerHTML = '☰';
+	}
+}
+
+for (let i = 0; i < navBtns.length; i++) {
+	navBtns[i].onclick = () => {
+		console.log('hui');
+		nav.classList.remove('nav-active');
+		menuBtn.classList.remove('menu-btn-active');
 		menuBtn.innerHTML = '☰';
 	}
 }

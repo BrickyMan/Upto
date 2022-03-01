@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1050px) {
   main {
     width: 100vw;
     overflow: hidden;
@@ -22,7 +22,7 @@
   }
 
   nav {
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,11 +30,12 @@
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -80vw;
+    right: -110vw;
     background-color: #ecf2ff;
     padding: 80px 20px;
     box-sizing: border-box;
     transition: ease 0.2s;
+    z-index: 20;
   }
   nav a {
     font-size: 22px;
@@ -46,7 +47,7 @@
   }
 
   .section {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .section-full {
     margin-bottom: 50px;
@@ -69,8 +70,6 @@
   }
 
   .about {
-    margin-bottom: 50px;
-    padding-left: 60px;
     box-sizing: border-box;
   }
   .about-wrapper {
@@ -103,6 +102,14 @@
   .partnership-text p {
     margin-bottom: 20px;
   }
+  .partnership-text a {
+    color: #2020df;
+  }
+  .partnership-text a img {
+    filter: sepia(0%);
+    opacity: 1;
+    margin-left: 25px;
+  }
   .partnership-player {
     width: 100%;
     height: 400px;
@@ -121,6 +128,7 @@
   }
 
   .feedback {
+    width: 100%;
     height: auto;
     flex-direction: column-reverse;
   }
@@ -134,22 +142,34 @@
     display: none;
   }
   .feedback-inner_text {
+    width: 100%;
     margin: 0;
     padding: 20px 10px;
+    box-sizing: border-box;
   }
   .feedback-inner_text-switch {
-    margin: 20px 0;
+    width: 120px;
+    margin: 20px auto;
+  }
+  .feedback-inner_text-switch button {
+    width: 40px;
   }
   .feedback-inner_text h3 {
     margin-bottom: 10px;
   }
   .feedback-inner:first-child {
-    border-radius: 200px 0 200px 0;
+    width: 100%;
+    border-radius: 150px 0 150px 0;
     padding: 30px 0;
   }
   .feedback-inner:last-child {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  #personInfo {
+    text-align: center;
   }
 
   .process {
@@ -184,10 +204,13 @@
   }
   .tools-links {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
   .tools-links_unit {
     width: 100%;
-    margin: 5px 0;
+    margin: 0;
   }
 
   .start {

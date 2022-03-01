@@ -62,7 +62,7 @@ header .logo {
   cursor: pointer;
   display: none;
   transition: ease 0.2s;
-  z-index: 100;
+  z-index: 30;
 }
 
 .menu-btn-active {
@@ -74,6 +74,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 nav a {
   font-size: 14px;
@@ -156,46 +157,43 @@ nav a:hover {
 .about {
   display: flex;
 }
+.about-prefix {
+  margin-right: 30px;
+}
+.about-prefix_shape {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecf2ff;
+  border-radius: 15px 3px 15px 3px;
+  transition: 0.1s linear;
+}
+.about-prefix_mark {
+  width: 10px;
+  height: 6px;
+  background: transparent;
+  border-bottom: 2px solid #2020df;
+  border-left: 2px solid #2020df;
+  transform: rotate(-45deg);
+  transition: 0.1s linear;
+}
 .about-wrapper {
   width: 50%;
   height: 450px;
 }
 .about-wrapper ul li {
+  display: flex;
   margin-bottom: 40px;
   list-style-type: none;
 }
-.about-wrapper ul li:hover::before {
+.about-wrapper ul li:hover .about-prefix_shape {
   background: #2020df;
 }
-.about-wrapper ul li:hover::after {
+.about-wrapper ul li:hover .about-prefix_mark {
   border-bottom: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-}
-.about-wrapper ul li::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #ecf2ff;
-  border-radius: 15px 3px 15px 3px;
-  position: absolute;
-  margin-left: -90px;
-  margin-top: 15px;
-  transition: 0.1s linear;
-}
-.about-wrapper ul li::after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 6px;
-  background: transparent;
-  position: absolute;
-  border-bottom: 2px solid #2020df;
-  border-left: 2px solid #2020df;
-  margin-left: -76px;
-  margin-top: -85px;
-  transform: rotate(-45deg);
-  transition: 0.1s linear;
 }
 .about-wrapper ul li h4 {
   font-weight: 500;

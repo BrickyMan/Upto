@@ -62,7 +62,7 @@ header
 	cursor: pointer
 	display: none
 	transition: ease 0.2s
-	z-index: 100
+	z-index: 30
 
 .menu-btn-active
 	border-radius: 3px 15px 3px 15px !important
@@ -72,6 +72,7 @@ nav
 	display: flex
 	justify-content: space-between
 	align-items: center
+	z-index: 10
 	a
 		font-size: 14px
 		color: $black
@@ -138,47 +139,42 @@ nav
 
 .about
 	display: flex
+	&-prefix
+		margin-right: 30px
+		&_shape
+			width: 40px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			background: $light-grey
+			border-radius: 15px 3px 15px 3px
+			transition: .1s linear
+		&_mark
+			width: 10px
+			height: 6px
+			background: transparent
+			border-bottom: 2px solid $blue
+			border-left: 2px solid $blue
+			transform: rotate(-45deg)
+			transition: .1s linear
 	&-wrapper
 		width: 50%
 		height: 450px
-		ul li
+		& ul li
+			display: flex
 			margin-bottom: 40px
 			list-style-type: none
-			&:hover
-				&::before
-					background: $blue
-				&::after
-					border-bottom: 2px solid $white
-					border-left: 2px solid $white
-			&::before
-				content: ""
-				display: block
-				width: 40px
-				height: 40px
-				background: $light-grey
-				border-radius: 15px 3px 15px 3px
-				position: absolute
-				margin-left: -90px
-				margin-top: 15px
-				transition: .1s linear
-			&::after
-				content: ""
-				display: block
-				width: 10px
-				height: 6px
-				background: transparent
-				position: absolute
-				border-bottom: 2px solid $blue
-				border-left: 2px solid $blue
-				margin-left: -76px
-				margin-top: -85px
-				transform: rotate(-45deg)
-				transition: .1s linear
-			h4
+			&:hover .about-prefix_shape
+				background: $blue
+			&:hover .about-prefix_mark
+				border-bottom: 2px solid $white
+				border-left: 2px solid $white
+			& h4
 				font-weight: 500
 				text-transform: capitalize
 				margin-bottom: 12px
-			p
+			& p
 				line-height: 1.8
 				font-size: 15px
 				color: $dark-grey
