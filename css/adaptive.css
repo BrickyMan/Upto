@@ -221,6 +221,9 @@
   .start a:nth-child(2) {
     margin-left: 0;
   }
+  .start h2 {
+    width: auto;
+  }
 
   footer {
     height: auto;
