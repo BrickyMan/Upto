@@ -135,9 +135,6 @@
   .feedback-inner {
     width: 100%;
   }
-  .feedback-inner-row-person_current {
-    z-index: 10;
-  }
   .feedback-inner_brackets {
     display: none;
   }
@@ -159,7 +156,10 @@
   }
   .feedback-inner:first-child {
     width: 100%;
-    border-radius: 150px 0 150px 0;
+    max-width: 500px;
+    height: 200px;
+    border-radius: 80px 0 80px 0;
+    margin: 0 auto;
     padding: 30px 0;
   }
   .feedback-inner:last-child {

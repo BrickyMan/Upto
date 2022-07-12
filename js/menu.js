@@ -15,7 +15,6 @@ menuBtn.onclick = () => {
 
 for (let i = 0; i < navBtns.length; i++) {
 	navBtns[i].onclick = () => {
-		console.log('hui');
 		nav.classList.remove('nav-active');
 		menuBtn.classList.remove('menu-btn-active');
 		menuBtn.innerHTML = '☰';
