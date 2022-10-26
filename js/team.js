@@ -19,9 +19,9 @@ if (window.innerWidth > 1050) {
 else {
 	unitsSettings = [
 		['30px', 'calc(35% - 15px)', '200px'],
-		['50px', 'calc(22% - 25px)', '150px'],
+		['50px', 'calc(20% - 25px)', '150px'],
 		['140px', 'calc(50% - 70px)', '50px'],
-		['50px', 'calc(78% - 25px)', '150px'],
+		['50px', 'calc(80% - 25px)', '150px'],
 		['30px', 'calc(65% - 15px)', '200px'],
 		['20px', 'calc(50% - 10px)', '220px'],
 	]

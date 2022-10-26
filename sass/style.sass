@@ -98,10 +98,12 @@ nav
 			color: $blue
 
 .section
-	width: 95%
+	width: 100%
 	max-width: 920px
 	margin: 0 auto
 	margin-bottom: 150px
+	padding: 0 20px
+	box-sizing: border-box
 	&-full
 		width: 100%
 		margin-bottom: 150px
@@ -334,7 +336,8 @@ nav
 			color: $dark-grey
 	&-heading
 		margin-bottom: 160px
-		h1
+		h2
+			font-size: 58px
 			margin-bottom: 10px
 		p
 			font-size: 19px
@@ -393,16 +396,15 @@ nav
 					color: $black
 					margin-top: 40px
 			&-switch
-				width: 77px
+				width: 80px
 				display: flex
 				justify-content: space-between
 				margin-top: 40px
 				button
 					width: 30px
-					height: 10px
-					background-size: cover
-					background-position: center
+					background-color: transparent
 					border: none
+					padding: 0
 					cursor: pointer
 					filter: grayscale(100%)
 					opacity: 0.6
@@ -410,12 +412,8 @@ nav
 					&:hover
 						filter: grayscale(0%)
 						opacity: 1
-
-#switchPrev
-	background-image: url(../images/arrow-left.png)
-	
-#switchNext
-	background-image: url(../images/arrow-right.png)
+					& img
+						width: 100%
 
 .tools
 	display: flex

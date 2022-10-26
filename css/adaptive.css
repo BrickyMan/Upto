@@ -50,6 +50,8 @@
     margin-bottom: 50px;
   }
   .section-full {
+    padding: 0 20px;
+    box-sizing: border-box;
     margin-bottom: 50px;
   }
 
@@ -156,10 +158,10 @@
   }
   .feedback-inner:first-child {
     width: 100%;
-    max-width: 500px;
-    height: 200px;
+    max-width: 400px;
+    height: 240px;
     border-radius: 80px 0 80px 0;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     padding: 30px 0;
   }
   .feedback-inner:last-child {
@@ -178,17 +180,25 @@
   .process-heading {
     margin-bottom: 30px;
   }
+  .process-heading h2 {
+    font-size: 34px;
+  }
   .process-step {
     width: 100%;
-    padding: 20px 0;
+    padding: 30px 0;
+    text-align: center;
   }
   .process-step_icon {
     width: 100px;
     height: 65px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
   }
   .process-step h2 {
+    font-size: 22px;
     margin-bottom: 10px;
+  }
+  .process-step p {
+    font-size: 16px;
   }
 
   .tools {

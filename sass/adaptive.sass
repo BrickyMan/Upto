@@ -37,6 +37,8 @@ $blue: #2020df
 	.section
 		margin-bottom: 50px
 		&-full
+			padding: 0 20px
+			box-sizing: border-box
 			margin-bottom: 50px
 	.opening
 		flex-direction: column
@@ -112,10 +114,10 @@ $blue: #2020df
 					margin-bottom: 10px
 			&:first-child
 				width: 100%
-				max-width: 500px
-				height: 200px
+				max-width: 400px
+				height: 240px
 				border-radius: 80px 0 80px 0
-				margin: 0 auto
+				margin: 0 auto 30px auto
 				padding: 30px 0
 			&:last-child
 				width: 100%
@@ -127,15 +129,21 @@ $blue: #2020df
 		flex-direction: column
 		&-heading
 			margin-bottom: 30px
+			& h2
+				font-size: 34px
 		&-step
 			width: 100%
-			padding: 20px 0
+			padding: 30px 0
+			text-align: center
 			&_icon
 				width: 100px
 				height: 65px
-				margin-bottom: 10px
+				margin: 0 auto 10px auto
 			& h2
+				font-size: 22px
 				margin-bottom: 10px
+			& p
+				font-size: 16px
 	.tools
 		flex-direction: column
 		align-items: flex-start
